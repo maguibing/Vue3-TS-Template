@@ -1,0 +1,54 @@
+{
+  "name": "vue3-ts-template",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dayjs": "^1.11.10",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.191",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.25",
+    "@unocss/eslint-config": "^0.58.5",
+    "@unocss/preset-rem-to-px": "^0.58.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/tsconfig": "^0.5.1",
+    "@zclzone/eslint-config": "^0.0.5",
+    "naive-ui": "^2.38.1",
+    "npm-run-all2": "^6.1.2",
+    "sass": "^1.72.0",
+    "typescript": "~5.4.0",
+    "unocss": "^0.58.5",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.1.5",
+    "vite-plugin-vue-devtools": "^7.0.16",
+    "vue-tsc": "^2.0.6"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@zclzone",
+      "@unocss",
+      "./.eslintrc-auto-import.json"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  }
+}
