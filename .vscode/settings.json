@@ -35,12 +35,12 @@
   "eslint.experimental.useFlatConfig": true,
 
   // Disable the default formatter
-  "prettier.enable": true,
+  "prettier.enable": false,
   "editor.formatOnSave": false,
-  "[html][css][less][scss][sass][yaml][yml][jsonc][json]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // "[html][css][less][scss][sass][yaml][yml][jsonc][json]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
 
   // Auto fix
   "editor.codeActionsOnSave": {
